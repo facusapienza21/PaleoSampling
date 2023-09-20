@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=927b94d3fcb96560df09" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=927b94d3fcb96560df09"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -64,7 +65,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'figures/figure4_boxplot/Figure4_boxplot';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Figure 2: Difference in Performance between different number of samples per site" href="../figure3_heatmap/Figure3_heatmap.html" />
+    <link rel="next" title="Parallelization with Dask" href="../../notebooks/Parallel.html" />
+    <link rel="prev" title="Figure 3: Intersection as function of dispersion parameters" href="../figure3_heatmap/Figure3_heatmap.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -75,6 +77,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -130,13 +141,19 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="../../Main.html">
+<a class="navbar-brand logo" href="../../book/Main.html">
   
   
   
   
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
-    <p class="title logo__title">Quantitative Analysis of Paleomagnetic Sampling Strategies</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -144,7 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../Main.html">
+                <a class="reference internal" href="../../book/Main.html">
                     Quantitative Analysis of Paleomagnetic Sampling Strategies
                 </a>
             </li>
@@ -152,18 +169,23 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../notebooks/Sampling_example.html">Example of sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../notebooks/Sampling_comparision.html">Comparision of two sampling strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/Sampling_comparison.html">Comparison of two sampling strategies</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../../notebooks/Parallel.html">Parallelization with Dask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/DIY-Figure1.html">DIY Figure 1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Figures</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../figure1/Figure1.html">Figure 1: Mean Squared Error as a function of the samples per site and sites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../figure2/Figure2.html">Figure 2:  Decay as a function of the number of samples and sites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../figure3_histogram/Figure3_hist.html">Paleomagnetic Sampling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../figure3_heatmap/Figure3_heatmap.html">Figure 2: Difference in Performance between different number of samples per site</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../figure3_histogram/Figure3_hist.html">Figure 3: Histogram comparing sampling strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../figure3_intersection/Figure3_intersection.html">Figure 3: Intersection of errors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../figure3_heatmap/Figure3_heatmap.html">Figure 3: Intersection as function of dispersion parameters</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Figure 4: Boxplot</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/Parallel.html">Parallelization with Dask</a></li>
 </ul>
 
     </div>
@@ -241,6 +263,53 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/PolarWandering/PaleoSampling" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/PolarWandering/PaleoSampling/issues/new?title=Issue%20on%20page%20%2Ffigures/figure4_boxplot/Figure4_boxplot.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -303,10 +372,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
@@ -314,7 +383,7 @@ document.write(`
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -341,12 +410,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vgp-scatter">VGP scatter</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-40">Total samples 40</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-100">Total samples 100</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-300">Total samples 300</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vgp-scatter">VGP scatter</a></li>
 </ul>
             </nav>
         </div>
@@ -731,7 +795,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_30949/3131951472.py:17: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3098/4131771631.py:17: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -739,7 +803,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   df_[&quot;Sampling Strategy&quot;] = df_.apply(lambda row : rename_outlier_method(row.ignore_outliers), axis=1)
 </pre></div>
 </div>
-<img alt="../../_images/4e86ac699d92b3b01595a95e0a2e94cc6ef2b0d22053206b7f71f82d3eeb959c.png" src="../../_images/4e86ac699d92b3b01595a95e0a2e94cc6ef2b0d22053206b7f71f82d3eeb959c.png" />
+<img alt="../../_images/02816390e08d5b2d7fa9c400f50128b08e6a249ad37c7249b9b107f779c37e4d.png" src="../../_images/02816390e08d5b2d7fa9c400f50128b08e6a249ad37c7249b9b107f779c37e4d.png" />
 </div>
 </div>
 <section id="vgp-scatter">
@@ -805,7 +869,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1934/2634743452.py:19: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3098/2634743452.py:19: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -813,87 +877,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   df_[&quot;Sampling Strategy&quot;] = df_.apply(lambda row : rename_outlier_method(row.ignore_outliers), axis=1)
 </pre></div>
 </div>
-<img alt="../../_images/1cd702fae52bf437eb1d7624d52584b93326bc3eee2e8d06c93e8dd0eece4155.png" src="../../_images/1cd702fae52bf437eb1d7624d52584b93326bc3eee2e8d06c93e8dd0eece4155.png" />
+<img alt="../../_images/81dbb6f6667a06dfea4d40964c719030d81508f4b78de5c7ab45124e82c52c13.png" src="../../_images/81dbb6f6667a06dfea4d40964c719030d81508f4b78de5c7ab45124e82c52c13.png" />
 </div>
 </div>
-<section id="total-samples-40">
-<h3>Total samples 40<a class="headerlink" href="#total-samples-40" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../outputs/fig1a_1000sim_total_Lean_40.csv&#39;</span><span class="p">)</span>
-
-<span class="n">df_</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ignore_outliers&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">False</span><span class="p">]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-<span class="c1"># create grouped boxplot </span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_</span><span class="p">,</span>
-            <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;samples_per_sites&#39;</span><span class="p">,</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;error_angle&#39;</span><span class="p">,</span>
-            <span class="n">hue</span> <span class="o">=</span> <span class="s1">&#39;outlier_rate&#39;</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;$n_</span><span class="si">{tot}</span><span class="s2">$ ~ 40 samples&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;$n_{tot}$ ~ 40 samples&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/386ec70c83a80aafc94278da1051927d6ed10b120a3ab6b32bcf338d2dabb008.png" src="../../_images/386ec70c83a80aafc94278da1051927d6ed10b120a3ab6b32bcf338d2dabb008.png" />
-</div>
-</div>
-</section>
-<section id="total-samples-100">
-<h3>Total samples 100<a class="headerlink" href="#total-samples-100" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../outputs/fig1a_1000sim_total_Lean_100.csv&#39;</span><span class="p">)</span>
-
-<span class="n">df_</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ignore_outliers&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">False</span><span class="p">]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-<span class="c1"># create grouped boxplot </span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_</span><span class="p">,</span>
-            <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;samples_per_sites&#39;</span><span class="p">,</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;error_angle&#39;</span><span class="p">,</span>
-            <span class="n">hue</span> <span class="o">=</span> <span class="s1">&#39;outlier_rate&#39;</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;$n_</span><span class="si">{tot}</span><span class="s2">$ ~ 40 samples&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;$n_{tot}$ ~ 40 samples&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/cc0aa2e61da550d257594e21579e89949090028c106cdce3501feeb5975e6f1c.png" src="../../_images/cc0aa2e61da550d257594e21579e89949090028c106cdce3501feeb5975e6f1c.png" />
-</div>
-</div>
-</section>
-<section id="total-samples-300">
-<h3>Total samples 300<a class="headerlink" href="#total-samples-300" title="Permalink to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../outputs/fig1a_1000sim_total_Lean_300.csv&#39;</span><span class="p">)</span>
-
-<span class="n">df_</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ignore_outliers&#39;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-<span class="c1"># create grouped boxplot </span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">df_</span><span class="p">,</span>
-            <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;samples_per_sites&#39;</span><span class="p">,</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;error_angle&#39;</span><span class="p">,</span>
-            <span class="n">hue</span> <span class="o">=</span> <span class="s1">&#39;outlier_rate&#39;</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;$n_</span><span class="si">{tot}</span><span class="s2">$ ~ 300 samples&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;$n_{tot}$ ~ 300 samples&#39;)
-</pre></div>
-</div>
-<img alt="../../_images/823b6753ec0bf884b6878d8eddda02dc3d40de82144d3187cbcba791e968e678.png" src="../../_images/823b6753ec0bf884b6878d8eddda02dc3d40de82144d3187cbcba791e968e678.png" />
-</div>
-</div>
-</section>
 </section>
 </section>
 
@@ -922,11 +908,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
               
               
-                <footer class="bd-footer-article">
-                  
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../figure3_heatmap/Figure3_heatmap.html"
@@ -934,13 +919,19 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Figure 2: Difference in Performance between different number of samples per site</p>
+        <p class="prev-next-title">Figure 3: Intersection as function of dispersion parameters</p>
       </div>
     </a>
-</div></div>
-  
+    <a class="right-next"
+       href="../../notebooks/Parallel.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Parallelization with Dask</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
-
                 </footer>
               
             </div>
@@ -955,12 +946,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vgp-scatter">VGP scatter</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-40">Total samples 40</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-100">Total samples 100</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#total-samples-300">Total samples 300</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vgp-scatter">VGP scatter</a></li>
 </ul>
   </nav></div>
 
@@ -1008,8 +994,8 @@ By Facundo Sapienza
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=927b94d3fcb96560df09"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=927b94d3fcb96560df09"></script>
 
   <footer class="bd-footer">
   </footer>
